@@ -1,0 +1,67 @@
+ENGLISH
+1. cd /usr/share/applications/
+2. Make file.dektop
+example:
+_________________________________________________________________________________________
+sudo gedit xampp.desktop
+_________________________________________________________________________________________
+
+3. Input :
+_________________________________________________________________________________________
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Icon[en_US]=/opt/lampp/htdocs/favicon.ico
+Name[en_US]=XAMPP
+Exec=gksu /opt/lampp/manager-linux-x64.run  
+Comment[en_US]=Start XAMPP Control Panel
+Name=XAMPP
+Comment=Start XAMPP Control Panel
+Icon=/opt/lampp/htdocs/favicon.ico
+_________________________________________________________________________________________
+**note: 
+1. You have to use gksu (afraid of error when use Python) if you want to get custom (if you don't have gksu just download)
+2. For other aplication just change  Icon and Exec PATH.
+3. You can custom the Name and Comment 
+**
+
+4. Make executable file
+example:
+_________________________________________________________________________________________
+sudo chmod +x xampp.desktop
+_________________________________________________________________________________________
+
+
+
+INDONESIA
+1. cd /usr/share/applications/
+2. Membuat file.dektop
+example:
+_________________________________________________________________________________________
+sudo gedit xampp.desktop
+_________________________________________________________________________________________
+
+3. Input :
+_________________________________________________________________________________________
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Icon[en_US]=/opt/lampp/htdocs/favicon.ico
+Name[en_US]=XAMPP
+Exec=gksu /opt/lampp/manager-linux-x64.run  
+Comment[en_US]=Start XAMPP Control Panel
+Name=XAMPP
+Comment=Start XAMPP Control Panel
+Icon=/opt/lampp/htdocs/favicon.ico
+_________________________________________________________________________________________
+**note: Exec harus pakai gksu (phyton takut error) kalau mau custom (kalo gk ada gksu download lah)**
+
+4. executable file
+example:
+_________________________________________________________________________________________
+sudo chmod +x xampp.desktop
+_________________________________________________________________________________________
