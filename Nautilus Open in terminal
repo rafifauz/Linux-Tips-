@@ -1,0 +1,32 @@
+ENGLISH
+1. Create a script (example: Terminal) in the folder ~/.local/share/nautilus/scripts
+2. The contents of that file 'Terminal' will be
+Code:
+-----------------------------------------------------------------------------------------
+#! /bin/sh
+gnome-terminal
+-----------------------------------------------------------------------------------------
+
+3. Make the script executable.(Open terminal and insert this code)
+-----------------------------------------------------------------------------------------
+chmod +x Terminal
+-----------------------------------------------------------------------------------------
+
+4. In the folder ~/.config/nautilus, edit the file named 'scripts-accels'. (There was no such file on my setup, so I created one.) The contents of the file will be of the format:
+
+'Desired keyboard shortcut' 'Name of the script created in step #1' (sans quotes)
+Code:
+-----------------------------------------------------------------------------------------
+<Button> + {Name script from number 1}
+-----------------------------------------------------------------------------------------
+
+Example Implement Code:
+-----------------------------------------------------------------------------------------
+<Shift>F12 Terminal
+-----------------------------------------------------------------------------------------
+
+5. Save the script, quit and restart nautilus
+Code:
+-----------------------------------------------------------------------------------------
+nautilus -q && nautilus
+-----------------------------------------------------------------------------------------
